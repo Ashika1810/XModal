@@ -65,7 +65,7 @@ function App() {
                 <label htmlFor="username">Username:</label>
                 <input id="username" type="text" ref={usernameRef} required/>
                 <label htmlFor="email">Email Address:</label>
-                <input id="username" type="email" ref={emailRef} required/>
+                <input id="email" type="email" ref={emailRef} required/>
                 <label htmlFor="phonenumber">Phone Number:</label>
                 <input id="phonenumber" type="tel" ref={phoneRef} required/>
                 <label htmlFor="dob">Date of Birth:</label>
