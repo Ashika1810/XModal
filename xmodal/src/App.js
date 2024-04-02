@@ -66,8 +66,8 @@ function App() {
                 <input id="username" type="text" ref={usernameRef} required/>
                 <label htmlFor="email">Email Address:</label>
                 <input id="email" type="email" ref={emailRef} required/>
-                <label htmlFor="phonenumber">Phone Number:</label>
-                <input id="phonenumber" type="tel" ref={phoneRef} required/>
+                <label htmlFor="phone">Phone Number:</label>
+                <input id="phone" type="tel" ref={phoneRef} required/>
                 <label htmlFor="dob">Date of Birth:</label>
                 <input id="dob" type="date" ref={dobRef} required/>
                 <button type='submit' className='submit-button'
