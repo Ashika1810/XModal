@@ -25,11 +25,8 @@ function App() {
     const email = emailRef.current.value;
     const phone = phoneRef.current.value;
     const dob = dobRef.current.value;
-
-    if (!username || !email || !phone || !dob) {
-      alert("Please fill in all fields.");
-      return;
-    }
+   
+    // setModalDisplay(false);
 
     if(!email.includes("@")){
       alert("Invalid email");
@@ -48,14 +45,17 @@ function App() {
       return;
     }
     e.preventDefault();
-    setModalDisplay(false);
 
+    usernameRef.current.value = null;
+    emailRef.current.value=null;
+    phoneRef.current.value=null;
+    dobRef.current.value=null;
   }
 
   return (
     <div className='App' onClick={handleClickOutside}>
       <h1>User Details Modal</h1>
-      <button className='formbutton'
+      <button type='button' className='modal-button'
        onClick={openFormClick}>Open Form</button>
       {modalDisplay && (
         <div className='modal' onClick={handleClickOutside}>
