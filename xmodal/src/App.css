@@ -1,0 +1,45 @@
+.App{
+  text-align: center;
+}
+
+.formbutton{
+  background-color: #3554e0;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  padding: 15px;;
+}
+.modal{
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px; 
+  width: 100%;
+}
+
+.modal-content input {
+  padding: 0.5em;
+  border-style: grey solid ;
+  border-radius: 10px;
+  width: 100%;
+ }
+ 
+ form {
+  font-size: large;
+  font-weight: bold;
+}
+
+ form>button{
+  color: white;
+  background-color: #3554e0;
+  border-radius: 0.5rem;
+  margin-top: 2vh;
+ }
